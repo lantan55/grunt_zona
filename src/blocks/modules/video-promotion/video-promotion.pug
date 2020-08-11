@@ -1,0 +1,8 @@
+section.promotion.section(style="background-image: url(" + promo_bg + ")")
+  .section__overlay
+  .promotion__wrapper
+    h1.promotion__title #{promo_title}
+    p.promotion__subtitle #{promo_subtitle}
+    if promo_buttonText.length
+      a.promotion__btn.btn.btn--white(href=promo_buttonHref)
+        span #{promo_buttonText}

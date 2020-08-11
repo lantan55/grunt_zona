@@ -1,0 +1,29 @@
+nav.header.navbar.fixed-top
+    .header__wrapper.container
+        .header__logo.col-2
+            a(href="/")
+            img(src=logo)
+        .header__menu.col-8
+            ion-icon#topmenu.icon(name="menu-outline")
+            ul.menu
+                li
+                    a.active(href="/") Главная
+                li
+                    a(href="/about.html") О нас
+                li.dropdown
+                    a.dropdown-toggle(href="/products.html", role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false") Наше предложение
+                    ul.dropdown-menu(aria-labelledby="dropdownMenuButton")
+                        li
+                            a.dropdown-item(href="rostovye-kukly.html") Ростовые куклы
+                        li
+                            a.dropdown-item(href="suveniry.html") Сувениры для спортклубов
+                        li
+                            a.dropdown-item(href="myagkaya-igrushka.html") Мягкая игрушка
+                        li
+                            a.dropdown-item(href="poligrafiya-i-suveniry.html") Полиграфия и сувениры
+                li
+                    a(href="/portfolio.html") Портфолио
+                li
+                    a(href="/contacts.html") Связаться с нами
+        .header__contacts.col-2
+            a.header__btn.c-btn.c-btn--orange(href='tel:' + phone_2) #{phone_2}

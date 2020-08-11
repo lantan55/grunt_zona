@@ -1,0 +1,11 @@
+section.section.call-to-action(
+  style="background-image: url(" + call_bg + ")"
+)
+  .section__overlay
+  .call-to-action__wrapper
+    h2.call-to-action__title #{call_title}
+    .call-to-action__buttons
+      if call_btnText
+        a.call-to-action__btn.btn.btn--green(href=call_btnHref) #{call_btnText}
+      if call_btn2Text
+        a.call-to-action__btn.btn.btn--green(href=call_btn2Href) #{call_btn2Text}

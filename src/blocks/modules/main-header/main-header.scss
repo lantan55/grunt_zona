@@ -1,0 +1,28 @@
+.main-header {
+  display: flex;
+  align-items: center;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__wrapper {
+    z-index: 1;
+    color: #ffffff;
+  }
+
+  &__title {
+    font-size: 2.5em;
+  }
+
+  &__subtitle {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  &__btn {
+
+  }
+}
