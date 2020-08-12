@@ -1,7 +1,8 @@
 section.section.about-text
     .container.about-text__wrapper
         p.about-text__subtitle #{aboutTextSubtitle}
-    .container.about-text__cards
+    .container.about-text__cards.img-list
         if aboutTextList
             each item in aboutTextList
-                img(src=item, alt="")
+                .img-list__item
+                    img(src=item, alt="")
