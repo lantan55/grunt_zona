@@ -1,0 +1,74 @@
+-
+    var brandsList = [
+        {
+            title: 'Корпоративные клиенты',
+            list: [
+                '/assets/img/brands/corp/Lukoil.png',
+                '/assets/img/brands/corp/Sokos.png',
+                '/assets/img/brands/corp/бош.png',
+                '/assets/img/brands/corp/главстрой.png',
+                '/assets/img/brands/corp/зззз.png',
+                '/assets/img/brands/corp/мдм.png',
+                '/assets/img/brands/corp/норникель.png',
+                '/assets/img/brands/corp/политех.png',
+                '/assets/img/brands/corp/северсталь.png',
+                '/assets/img/brands/corp/спбгу.png',
+            ]
+        },
+        {
+            title: 'Производственные и сетевые организации',
+            list: [
+                '/assets/img/brands/proz/366.png',
+                '/assets/img/brands/proz/Coca Cola.png',
+                '/assets/img/brands/proz/Ladoga.png',
+                '/assets/img/brands/proz/Pepsi.png',
+                '/assets/img/brands/proz/Petrovich.png',
+                '/assets/img/brands/proz/Tema.png',
+                '/assets/img/brands/proz/адамант.png',
+                '/assets/img/brands/proz/балтика.png',
+                '/assets/img/brands/proz/евразия.png',
+                '/assets/img/brands/proz/кейэфси.png',
+                // '/assets/img/brands/proz/лактис.png',
+                // '/assets/img/brands/proz/оптека.png',
+                // '/assets/img/brands/proz/орими.png',
+                // '/assets/img/brands/proz/петмол.png',
+                // '/assets/img/brands/proz/петрович.png',
+                // '/assets/img/brands/proz/разин.png',
+                // '/assets/img/brands/proz/текс.png',
+                // '/assets/img/brands/proz/урса.png',
+            ]
+        },
+        {
+            title: 'Спортивные клубы и федерации',
+            list: [
+                '/assets/img/brands/sport/Avangard.png',
+                '/assets/img/brands/sport/Barys.png',
+                '/assets/img/brands/sport/CSKA.png',
+                '/assets/img/brands/sport/FHR.png',
+                '/assets/img/brands/sport/Krasnodar.png',
+                '/assets/img/brands/sport/Lokomotiv.png',
+                '/assets/img/brands/sport/Metallurg.png',
+                '/assets/img/brands/sport/SKA.png',
+                '/assets/img/brands/sport/Sochi.png',
+                '/assets/img/brands/sport/Zenit.png',
+                // '/assets/img/brands/sport/бк парма.png',
+                // '/assets/img/brands/sport/иихф.png',
+                // '/assets/img/brands/sport/олень.png',
+                // '/assets/img/brands/sport/уникс.png',
+                // '/assets/img/brands/sport/уфимец бк.png',
+                // '/assets/img/brands/sport/фк урал.png',
+            ]
+        }
+    ]
+
+
+
+section.section.about-brands
+    .container
+        each cat, index in brandsList
+            .brands
+                h4.brands__title #{cat.title}
+                hr.brands__hr
+                .brands__wrapper
+                    each item in cat.list
+                        img.brands__img(src=item)

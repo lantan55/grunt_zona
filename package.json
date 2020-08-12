@@ -69,11 +69,9 @@
     "yargs": "~13.2.4"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
     "bxslider": "^4.2.14",
     "jquery": "^3.5.1",
-    "magnific-popup": "^1.1.0",
-    "popper.js": "^1.16.1"
+    "magnific-popup": "^1.1.0"
   },
 
   "lint-staged": {

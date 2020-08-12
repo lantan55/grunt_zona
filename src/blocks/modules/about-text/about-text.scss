@@ -1,0 +1,29 @@
+.about-text {
+  padding-top: 7rem;
+  &__wrapper {
+    max-width: 700px;
+  }
+
+  &__subtitle {
+    text-align: justify;
+    font-size: 1.1em;
+    line-height: 2em;
+    color: #000000;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+
+    img {
+      width: 300px;
+      height: 230px;
+      margin: 0.5rem;
+      border: 3px solid $color-orange;
+      justify-self: center;
+    }
+  }
+}

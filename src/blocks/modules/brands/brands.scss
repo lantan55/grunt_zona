@@ -1,6 +1,5 @@
 .brands {
   padding-top: 2rem;
-
   .bx-wrapper {
     border: none;
     box-shadow: none;
@@ -12,7 +11,6 @@
       filter: grayscale(100%);
       cursor: pointer;
       transition: all 0.4s;
-
       &:hover {
         filter: grayscale(0);
       }

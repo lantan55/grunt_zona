@@ -1,0 +1,33 @@
+.about-brands {
+  padding-top: 5rem;
+
+  .brands {
+    margin: 2rem 0;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    &__title {
+      margin: 0;
+      font-size: 1.4em;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    &__hr {
+      margin: 1rem 0;
+    }
+
+    &__img {
+      width: 100px;
+      filter: grayscale(100%);
+      cursor: pointer;
+      transition: all 0.4s;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
