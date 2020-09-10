@@ -1,13 +1,13 @@
 .header {
   padding-top: 2rem;
+  background-size: contain;
+  background-position: right bottom;
   padding-bottom: 1rem;
   background-image: url("../../assets/img/hbg_100.png");
-  background-position: right bottom;
-  background-size: contain;
 
   &__wrapper {
-    display: flex;
     justify-content: space-between;
+    display: flex;
   }
 }
 
@@ -17,11 +17,10 @@
 
   &__item {
     a {
-      padding-left: 0;
-
       color: $color-blue-light;
-      font-size: 0.9em;
+      padding-left: 0;
       padding-right: 0;
+      font-size: 0.9em;
 
       &::after {
         content: "/";
@@ -31,6 +30,7 @@
       }
     }
   }
+
   &__popup {
     display: flex;
     align-items: center;
