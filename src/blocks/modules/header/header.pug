@@ -1,30 +1,35 @@
-header.header.header--static
-    .header__wrapper.container
-        .header__logo
-            a(href="/")
-            img(src=logo)
-        .header__menu
-            ion-icon#topmenu.icon(name="menu-outline")
-            ul
-                li
-                    a.active(href="/") Главная
-                li
-                    a(href="/about.html") О нас
-                li.submenu
-                    a(href="/products.html") Наше предложение
-                    ul
-                        li
-                            a(href="rostovye-kukly.html") Ростовые куклы
-                        li
-                            a(href="suveniry.html") Сувениры для спортклубов
-                        li
-                            a(href="myagkaya-igrushka.html") Мягкая игрушка
-                        li
-                            a(href="poligrafiya-i-suveniry.html") Полиграфия и сувениры
+header.header
+    .container
+        .header__wrapper
+            .header__logo.logo
+                img.logo__img(src=logo, alt="")
+                .logo__text
+                    span.logo__name #{name}
+                    span.logo__tagline #{tagline}
+            .header__contacts.contacts 
+                .contacts__mail
+                    span.contacts__link #{mail_1}
+                    span.contacts__link #{mail_2}
+                    span.contacts__desc--light #{schedule}
+                .contacts__phone
+                    .contacts__phones
+                        img.contacts__icon(src="assets/img/sprites/sprite.svg#phone", alt="phone")
+                        div
+                            span.contacts__text #{phone_1} 
+                            span.contacts__text #{phone_2}
+                    span.contacts__desc #{address}
+        nav.topmenu
+            ul.nav
+                li.nav-item.topmenu__item()
+                    a.nav-link.active(href="#") Главная
+                li.nav-item.topmenu__item()
+                    a.nav-link(href="#") О нас
+                li.nav-item.topmenu__item()
+                    a.nav-link(href="#") Деятельность
+                li.nav-item.topmenu__item()
+                    a.nav-link(href="#") Выполненные объекты
+                li.nav-item.topmenu__item()
+                    a.nav-link(href="#") Контакты
+            .topmenu__popup
+                a.topmenu__popup__link Заказать звонок
 
-                li
-                    a(href="/portfolio.html") Портфолио
-                li
-                    a(href="/contacts.html") Связаться с нами
-        .header__contacts
-            a.header__btn.btn.btn--orange(href='tel:' + phone_2) #{phone_2}

@@ -1,12 +1,15 @@
 block global
-    - var title = 'Главная';
-    - var logo = 'assets/img/global/logo_hor.svg';
-    - var phone_1 = '8 (812) 327-80-80';
-    - var phone_2 = '8 (800) 123 45 67';
-    - var mail = 'GIFTS@POSTER-GROUP.RU';
-    - var address = '191024, Россия, Санкт-Петербург ул. Конная, дом 28 литера "Ж"';
-    -
-        var socials = [
+    - const name = 'Грунт-зона';
+    - const tagline = 'Ответственность при выполнении работ';
+    - const logo = 'assets/img/logo.png';
+    - const phone_1 = '+7 (812) 648-21-20';
+    - const phone_2 = '+7 (921) 998-59-85';
+    - const mail_1 = 'info@grunt-zona.ru';
+    - const mail_2 = '6482120@mail.ru';
+    - const address = 'СПб, пр. Обуховской Обороны, 271';
+    - const schedule = 'Пн-Вс: с 09 до 21'
+    - 
+        const socials = [
             {href: '#', name: 'facebook'},
             {href: '#', name: 'instagram'}
         ]
@@ -16,19 +19,18 @@ block variables
 doctype html
 html(lang="ru")
     head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible", content="IE=edge")
-    meta(name="viewport", content="initial-scale=1.0, width=device-width")
-    link(rel="icon", href="assets/img/favicon.ico")
-    link(rel="stylesheet", href="assets/styles/main.css")
-    title #{title}
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="initial-scale=1.0, width=device-width")
+        link(rel="icon", href="assets/img/favicons/favicon.ico")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        link(rel="stylesheet", href="assets/styles/main.css")
+        title #{title}
     body
         .wrapper
             include ../../blocks/modules/header/header
             block content
-            include ../../blocks/modules/to-top/to-top
             include ../../blocks/modules/footer/footer
         block scripts
-            script( src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js" )
             script(src="assets/js/main.js")
             script(src="assets/js/vendor.js")

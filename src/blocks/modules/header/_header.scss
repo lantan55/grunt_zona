@@ -1,178 +1,44 @@
 .header {
-  z-index: 10;
-  transition: all 0.4s;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-image: url("../../assets/img/hbg_100.png");
+  background-position: right bottom;
+  background-size: contain;
 
   &__wrapper {
-    display: grid;
-    align-items: center;
-    width: 100%;
-    transition: all 0.4s;
-    grid-template-columns: 18% 1fr 18%;
-    grid-template-rows: 1fr;
-    gap: 1px 1px;
-  }
-  &__logo {
     display: flex;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    transition: all 0.4s;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    background: #ffffff;
-    border-radius: 0 0 5px 5px;
+    justify-content: space-between;
+  }
+}
+
+.topmenu {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
     a {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    img {
-      display: block;
-
-      width: 150px;
-      margin: 0 auto;
-    }
-  }
-  &__menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    .icon {
-      display: none;
-      font-size: 2rem;
-    }
-
-    ul {
-      display: flex;
-      align-items: center;
-      transition: all 0.4s;
       padding-left: 0;
 
-      li {
-        &:not(:first-child) {
-          margin-left: 30px;
-        }
+      color: $color-blue-light;
+      font-size: 0.9em;
+      padding-right: 0;
 
-        &.submenu {
-          position: relative;
-          ul {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            position: absolute;
-            top: 25px;
-            width: 300px;
-            height: 0;
-            overflow: hidden;
-            padding-left: 2rem;
-            background: #ffffff;
-            animation-duration: 4ms;
-
-            &.open {
-              height: 200px;
-              overflow: visible;
-              padding-top: 1rem;
-            }
-          }
-          li {
-            margin-left: 0;
-            margin-top: 0.8rem;
-            a {
-              color: #000000;
-            }
-          }
-        }
-
-        a {
-          position: relative;
-          transition: all 0.2s;
-          font-size: 0.9em;
-          font-weight: 500;
-          text-transform: uppercase;
-          text-decoration: none;
-          color: #ffffff;
-
-          &:after {
-            content: "";
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            transition: all 0.4s;
-            border-bottom: 2px solid $color-orange;
-          }
-
-          &:hover {
-            color: $color-orange;
-            &:after {
-              width: 100%;
-            }
-          }
-
-          &.active {
-            color: $color-orange;
-            font-weight: 500;
-
-            &:after {
-              width: 100%;
-            }
-          }
-        }
+      &::after {
+        content: "/";
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: lighten($color-gray, 20%);
       }
     }
   }
-  &__contacts {
-    //padding-top: 1rem;
-
+  &__popup {
     display: flex;
     align-items: center;
-    justify-content: center;
-  }
-  &__btn {
-    padding: 1em;
 
-    &:hover {
-      color: #ffffff;
-    }
-  }
-  &--static {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-  &--fixed {
-    background: #ffffff;
-    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-      0 4px 5px 0 rgba(0, 0, 0, 0.14),
-      0 1px 10px 0 rgba(0, 0, 0, 0.12);
-
-    .header__logo {
-      padding-top: 1rem;
-    }
-
-    .header__btn {
-      &:hover {
-        color: #000000;
-      }
-    }
-    .header__menu {
-      ul {
-        a {
-          color: #000000;
-          &.active {
-            font-weight: 500;
-          }
-        }
-      }
+    a {
+      color: $color-blue-light;
+      text-decoration: underline;
+      cursor: pointer;
     }
   }
 }

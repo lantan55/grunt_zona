@@ -1,11 +1,15 @@
 //colors
-$color-green: #158c1d;
-$color-orange: #d96704;
-$color-gray: #4f5f61;
-$color-grayLight: #d3dbdc;
-$color-dark: #212121;
-$color-grayText: #828282;
+// $color-green: #158c1d;
+// $color-orange: #d96704;
+// $color-gray: #4f5f61;
+// $color-grayLight: #d3dbdc;
+// $color-dark: #212121;
+// $color-grayText: #828282;
+$color-blue: #12699b;
+$color-blue-light: lighten(#12699b, 10%);
+$color-gray: lighten(#000, 60%);
+$color-red: #e61739;
 
 //fonts
 $font-main: Ubuntu, sans-serif;
-$font-main-size: 16px;
+$font-size-base: 16px;
