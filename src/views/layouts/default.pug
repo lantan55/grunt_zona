@@ -7,6 +7,7 @@ block global
     - const mail_1 = 'info@grunt-zona.ru';
     - const mail_2 = '6482120@mail.ru';
     - const address = 'СПб, пр. Обуховской Обороны, 271';
+    - const address_full = 'Санкт-Петербург, пр. Обуховской Обороны, д. 271. 3 этаж, офис 314';
     - const schedule = 'Пн-Вс: с 09 до 21'
     - 
         const socials = [
@@ -23,7 +24,7 @@ html(lang="ru")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="initial-scale=1.0, width=device-width")
         link(rel="icon", href="assets/img/favicons/favicon.ico")
-        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+        //link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
         link(rel="stylesheet", href="assets/styles/main.css")
         title #{title}
     body
@@ -34,3 +35,4 @@ html(lang="ru")
         block scripts
             script(src="assets/js/main.js")
             script(src="assets/js/vendor.js")
+            script(src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js")

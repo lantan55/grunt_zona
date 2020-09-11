@@ -1,3 +1,155 @@
 .footer {
-  background: #000;
+  background: $color-gray-bg;
+
+  &__contacts {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    &__row {
+      display: flex;
+      margin-top: 1.5rem;
+
+      .icon {
+        display: flex;
+        justify-content: flex-end;
+        width: 60px;
+        height: 100%;
+
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .desc {
+        margin-left: 1.5rem;
+      }
+      &.logo {
+        width: 100%;
+        .icon {
+          width: 60px;
+          height: 100%;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .text {
+          display: flex;
+          flex-direction: column;
+        }
+        .name {
+          display: block;
+          font-size: 2em;
+          font-weight: 900;
+          line-height: 1em;
+          color: $color-blue;
+          text-transform: uppercase;
+        }
+        .tagline {
+          display: block;
+          width: 200px;
+          font-size: 1.2em;
+          font-weight: 600;
+          line-height: 0.9em;
+          color: #000;
+          text-transform: lowercase;
+        }
+      }
+      &.phone {
+        .text {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            font-size: 1.3em;
+            font-weight: 600;
+            line-height: 1.2em;
+          }
+        }
+      }
+      &.mail {
+        .text {
+          display: flex;
+          flex-direction: column;
+
+          .link {
+            color: $color-blue-light;
+            font-size: 1.1em;
+            font-weight: 400;
+            line-height: 1.2em;
+          }
+        }
+      }
+      &.address {
+        .text {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: darken($color-gray, 10%);
+            font-size: 1em;
+            line-height: 1.2em;
+          }
+        }
+      }
+      &.socials {
+        margin-top: 1rem;
+        .desc {
+          margin-left: calc(60px + 1.5rem);
+        }
+        span {
+          color: darken($color-gray, 10%);
+          font-size: 1em;
+          line-height: 1.2em;
+        }
+        ul {
+          display: flex;
+          list-style-type: none;
+          margin-top: 0.2rem;
+          li {
+            margin-right: 0.7rem;
+            img {
+              width: 25px;
+              height: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__menu {
+    background: $color-gray-bg-darken;
+    position: relative;
+    height: 100%;
+    padding: 3rem;
+    transform: skew(-10deg, 0);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+    }
+    .list-tags {
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        li {
+          background: $color-gray-bg;
+          padding: 5px;
+        }
+      }
+    }
+
+    &__wrap {
+      background: #ffffff;
+      width: 100%;
+      height: 100%;
+    }
+    &_inner {
+      padding: 2rem 3rem;
+      transform: skew(10deg, 0);
+    }
+  }
 }

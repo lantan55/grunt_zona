@@ -1,3 +1,19 @@
+
+
+body {
+  font-size: $font-size-general;
+}
+main {
+  padding-top: 3rem;
+
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 250px;
+  grid-gap: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -9,8 +25,13 @@ ul {
   padding: 0;
 }
 
-body {
-  font-size: $font-size-base;
+h1 {
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+p {
+  margin-top: 1rem;
 }
 
 .logo {

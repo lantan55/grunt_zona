@@ -2,6 +2,13 @@ extends layouts/default
 include helpers/mixins
     
 block content
+    include ../blocks/modules/submenu/submenu
     main
-        include ../blocks/modules/breadcrumb/breadcrumb
+        .content.container
+            .sections
+                include ../blocks/modules/main/main
+                include ../blocks/modules/calc/calc
+                include ../blocks/modules/gallery/gallery
+            include ../blocks/modules/aside/aside
+        include ../blocks/modules/feedback/feedback
 
