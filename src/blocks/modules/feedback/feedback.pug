@@ -1,16 +1,17 @@
 section.section.feedback
-    .container.feedback__wrapper
-        form.feedback__form.form
-            .form-group
-                input(type="text" placeholder="Ваше имя")
-                input(type="phone" placeholder="Ваш телефон")
-                button.c-btn.c-btn--arrow(type="submit" )
-            .form-group
-                input.form-check-input(type="checkbox" value="" id="politics")
-                label.form-check-label(for="politics") Я согласен на обработку своих персональных
-                |  данных
-
-        .feedback__contacts
-            span.feedback__contacts__title Остались вопросы?
-            span.feedback__contacts__text #{phone_1}
-            span.feedback__contacts__text #{phone_1}
+    .container
+        .feedback__wrapper
+            form.feedback__form.form
+                h4.feedback__title Оставьте заявку и мы свяжемся с вами в ближайшее время!
+                .form__inner
+                    input(type="text" placeholder="Ваше имя")
+                    input(type="phone" placeholder="Ваш телефон")
+                    button.c-btn.c-btn--arrow(type="submit" ) Отправить
+                .form-group
+                    input.form-check-input(type="checkbox" value="" id="politics")
+                    label.form-check-label(for="politics") Я согласен на обработку своих персональных
+                        |  данных
+            .feedback__contacts
+                span.feedback__contacts__title Остались вопросы?
+                a.feedback__contacts__text(href="tel:" + phone_1) #{phone_1}
+                a.feedback__contacts__text(href="tel:" + phone_2) #{phone_2}

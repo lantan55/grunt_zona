@@ -1,4 +1,7 @@
 .search {
+  position: sticky;
+  top: 1rem;
+  height: 200px;
 
   .form {
     &__title {
