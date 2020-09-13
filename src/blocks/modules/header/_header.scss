@@ -14,19 +14,29 @@
 .topmenu {
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
 
   &__item {
     a {
       color: $color-blue-light;
       padding-left: 0;
       padding-right: 0;
-      font-size: 0.9em;
+      font-size: 1.1em;
+      font-weight: 400;
 
       &::after {
         content: "/";
         margin-left: 1rem;
         margin-right: 1rem;
+        font-size: 0.8em;
         color: lighten($color-gray, 20%);
+      }
+    }
+    &:last-child {
+      a {
+        &::after {
+          content: "";
+        }
       }
     }
   }

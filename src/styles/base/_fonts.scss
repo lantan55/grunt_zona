@@ -1,13 +1,7 @@
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-Bold", bold, normal);
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-BoldItalic", italic);
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-Italic", normal, italic);
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-Light", 100, normal);
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-LightItalic", 100, italic);
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-Medium", normal, normal);
-// @include font-face(
-//   "ubuntu",
-//   "../fonts/ubuntu/Ubuntu-MediumItalic",
-//   normal,
-//   italic
-// );
-// @include font-face("ubuntu", "../fonts/ubuntu/Ubuntu-Regular", normal, normal);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-Bold", bold, normal);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-BoldItalic",bold, italic);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-Italic", normal, italic);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-Light", 100, normal);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-LightItalic", 100, italic);
+ @include font-face("Roboto", "../fonts/Roboto/RobotoCondensed-Regular", normal, normal);
+

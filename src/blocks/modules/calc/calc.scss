@@ -1,0 +1,17 @@
+.calc {
+
+  .c-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 0 2rem;
+    &--arrow {
+      &::after {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}

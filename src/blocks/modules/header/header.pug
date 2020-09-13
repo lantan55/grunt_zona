@@ -8,15 +8,15 @@ header.header
                     span.logo__tagline #{tagline}
             .header__contacts.contacts 
                 .contacts__mail
-                    span.contacts__link #{mail_1}
-                    span.contacts__link #{mail_2}
+                    a.contacts__link(href="mailto:" + mail_1) #{mail_1}
+                    a.contacts__link(href="mailto:" + mail_2) #{mail_2}
                     span.contacts__desc--light #{schedule}
                 .contacts__phone
                     .contacts__phones
                         img.contacts__icon(src="assets/img/icons/phone.png", alt="phone")
                         div
-                            span.contacts__text #{phone_1} 
-                            span.contacts__text #{phone_2}
+                            a.contacts__text(href="tel:" + phone_1) #{phone_1}
+                            a.contacts__text(href="tel:" + phone_2) #{phone_2}
                     span.contacts__desc #{address}
         nav.topmenu
             ul.nav
