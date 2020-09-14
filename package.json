@@ -45,7 +45,7 @@
     "gulp-imagemin": "~6.0.0",
     "gulp-plumber": "^1.2.0",
     "gulp-pug": "^4.0.1",
-    "gulp-rename": "^1.2.2",
+    "gulp-rename": "^1.4.0",
     "gulp-replace": "^1.0.0",
     "gulp-sass": "~4.0.2",
     "gulp-sourcemaps": "^2.6.4",
@@ -73,7 +73,8 @@
     "bootstrap": "^4.5.2",
     "bxslider": "^4.2.14",
     "jquery": "^3.5.1",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "masonry-layout": "^4.2.2"
   },
   "husky": {
     "hooks": {

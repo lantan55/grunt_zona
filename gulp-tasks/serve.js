@@ -18,4 +18,5 @@ gulp.task("serve", () => {
   gulp.watch(paths.images.watch, gulp.parallel("images"));
   gulp.watch(paths.webp.watch, gulp.parallel("webp"));
   gulp.watch(paths.fonts.watch, gulp.parallel("fonts"));
+  gulp.watch(paths.gzip.watch, gulp.parallel("gzip"));
 });

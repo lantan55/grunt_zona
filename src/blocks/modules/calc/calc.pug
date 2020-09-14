@@ -4,40 +4,41 @@ section.section.calc
             .calc__btn__cancel
                 a(href="#") Сбросить параметры
             .row
-                .col-6
-                    .form-group
-                        label(for="range1") Стоимость
-                        input(type="range" class="form-control-range" id="range1")
-                .col-6
-                    .form-group
-                        label(for="range2") Площадь помещения
-                        input(type="range" class="form-control-range" id="range2")
-                .col-6
-                    .form-group
-                        label(for="complex") Жилой комплекс
-                        select.form-control( id="complex" )
-                            option 1
-                            option 2
-                            option 3
-                            option 4
-                            option 5
-                .col-6
-                    .form-group
-                        label(for="place") Местоположение
-                        select.form-control( id="place" )
-                            option 1
-                            option 2
-                            option 3
-                            option 4
-                            option 5
-                .col-6
-                    .form-group
-                        label(for="time") Срок сдачи
-                        input(type="range" class="form-control-range" id="time")
-                        input.form-check-input(type="checkbox" value="" id="rented")
-                        label.form-check-label(for="rented") Дом сдан
-                .col-6
-                    .form-group
-                        button.c-btn.c-btn--arrow(type="submit") Отправить
+                form(method='POST', action="data.php")
+                    .col-6
+                        .form-group
+                            label(for="range1") Стоимость
+                            input(type="range" class="form-control-range" id="range1")
+                    .col-6
+                        .form-group
+                            label(for="range2") Площадь помещения
+                            input(type="range" class="form-control-range" id="range2")
+                    .col-6
+                        .form-group
+                            label(for="complex") Жилой комплекс
+                            select.form-control( id="complex" )
+                                option 1
+                                option 2
+                                option 3
+                                option 4
+                                option 5
+                    .col-6
+                        .form-group
+                            label(for="place") Местоположение
+                            select.form-control( id="place" )
+                                option 1
+                                option 2
+                                option 3
+                                option 4
+                                option 5
+                    .col-6
+                        .form-group
+                            label(for="time") Срок сдачи
+                            input(type="range" class="form-control-range" id="time")
+                            input.form-check-input(type="checkbox" value="" id="rented")
+                            label.form-check-label(for="rented") Дом сдан
+                    .col-6
+                        .form-group
+                            button.c-btn.c-btn--arrow(type="submit") Отправить
 
 
