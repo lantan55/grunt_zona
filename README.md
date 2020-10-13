@@ -5,5 +5,3 @@
 - pug
 - scss
 - js
-- vue
--
